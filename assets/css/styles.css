@@ -23,9 +23,33 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 2rem;
 	margin: 10% 4rem 0 4rem;
+	
 }
 
 .last {
 	padding-bottom: 2rem;
 	border-bottom: 2px solid rgb(220,200,180);
+}
+/*
+.last:hover{
+animation-name: gorwAndGlow;
+	animation-duration: 3s; 
+}
+*/
+
+@keyframes growAndGlow {
+	from {
+		color: whitesmoke;
+	}
+
+	50% {
+		transform: skew(30deg,30deg); 
+		color: dodgerblue;
+		
+	}
+
+to {
+transform: scale(3); 
+	color:red;
+	}
 }
